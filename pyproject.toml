@@ -1,0 +1,76 @@
+# pyproject.toml
+
+[build-system]
+# Specifies the build tools needed to create the package distribution files (like wheels).
+# setuptools is standard for many Python packages. hatchling is another popular choice.
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Core metadata about the package, used by PyPI and pip.
+name = "seekgpt"
+version = "0.1.1" # Keep this in sync with seekgpt/__init__.py
+authors = [
+  # Replace with the actual author/maintainer details
+  { name="SeekGPT Team / Sanjib Narzary", email="seekgpt.org@gmail.com" },
+]
+description = "A Python client library for SeekGPT and other OpenAI-compatible LLM APIs."
+
+# Point to the README file for the long description on PyPI.
+readme = "README.md"
+
+# Specify the license. Choose one appropriate for your project.
+# Common choices: "MIT", "Apache-2.0"
+# If using a custom license file, use: license = { file = "LICENSE" }
+license = { text = "MIT" } # Example using MIT license text directly
+
+# Minimum Python version required. >=3.8 is a reasonable modern choice.
+requires-python = ">=3.8"
+
+# Classifiers help users find your project on PyPI.
+# See https://pypi.org/classifiers/ for a full list.
+classifiers = [
+    "Development Status :: 3 - Alpha", # Or "4 - Beta", "5 - Production/Stable"
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License", # Match the license chosen above
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Communications :: Chat",
+    "Typing :: Typed", # Indicates the library uses type hints
+]
+
+# Keywords help users search for your package.
+keywords = [
+    "llm", "ai", "openai", "seekgpt", "gemini", "anthropic", "cohere", "ollama",
+    "vllm", "api", "client", "chatgpt", "generative ai", "nlp"
+]
+
+# List runtime dependencies. These packages will be installed when users pip install seekgpt.
+dependencies = [
+    "requests>=2.26.0", # For making HTTP requests
+    "dotenv>=0.9.9", # For loading environment variables from .env files
+]
+
+# Optional dependencies: users can install these extras if needed.
+# Example: [project.optional-dependencies]
+#          visualize = ["matplotlib"]
+#          dev = ["pytest", "ruff", "mypy"] # For development
+
+# URLs related to the project, displayed on PyPI.
+[project.urls]
+"Homepage" = "https://github.com/seekgpt/seekgpt" # Replace with your actual repo URL
+"Repository" = "https://github.com/seekgpt/seekgpt" # Replace
+"Bug Tracker" = "https://github.com/seekgpt/seekgpt/issues" # Replace
+# "Documentation" = "https://seekgpt.readthedocs.io/" # If you set up separate docs
+
+# If your package includes command-line scripts:
+# [project.scripts]
+# seekgpt-cli = "seekgpt.cli:main" # Example: maps command 'seekgpt-cli' to main() in seekgpt/cli.py
+
