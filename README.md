@@ -80,7 +80,7 @@ from seekgpt import SeekGPT
 
 # SeekGPT will fallback to OPENAI_API_KEY if SEEKGPT_API_KEY is not set
 client = SeekGPT(
-    api_base="https://api.openai.com/v1",
+    api_base="https://api.openai.com/v1](https://api.openai.com/v1)",
     default_model="gpt-4o" # Set a default model for this client instance
 )
 
@@ -129,7 +129,7 @@ Set the appropriate API key environment variable (e.g., `ANYSCALE_API_KEY`, `TOG
 from seekgpt import SeekGPT
 
 client = SeekGPT(
-    api_base="[https://api.endpoints.anyscale.com/v1](https://api.endpoints.anyscale.com/v1)",
+    api_base="https://api.endpoints.anyscale.com/v1",
     # SeekGPT will try ANYSCALE_API_KEY if SEEKGPT_API_KEY/OPENAI_API_KEY are not set
     # Or pass explicitly: api_key="your-anyscale-key"
     default_model="mistralai/Mixtral-8x7B-Instruct-v0.1"
@@ -177,7 +177,7 @@ Wrap API calls in `try...except` blocks to handle potential issues.
 
 ## License
 
-This project is licensed under the MIT License - see the [https://www.google.com/search?q=LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ```
 
