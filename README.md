@@ -31,18 +31,18 @@ export SEEKGPT_API_KEY="your-seekgpt-api-key"
 # export SEEKGPT_DEFAULT_MODEL="seekgpt-model-name"
 ```
 
-Then use the `SeekGPTClient`:
+Then use the `SeekGPT`:
 
 ```python
-from seekgpt import SeekGPTClient
+from seekgpt import SeekGPT
 
 # Client automatically picks up SEEKGPT_API_KEY from environment
 # You can also pass it directly: SeekGPTClient(api_key="your-key")
-client = SeekGPTClient()
+client = SeekGPT(api_key="", api_base="https://api.seekgpt.org/v1")
 
 try:
     response = client.chat(
-        model="seekgpt-model-name", # Or rely on SEEKGPT_DEFAULT_MODEL env var
+        model="SeekGPT-mini", # Or rely on SEEKGPT_DEFAULT_MODEL env var
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "What is the capital of France?"}
@@ -52,7 +52,7 @@ try:
 
     # Streaming example
     stream = client.chat(
-        model="seekgpt-model-name",
+        model="SeekGPT-mini",
         messages=[{"role": "user", "content": "Tell me a short story."}],
         stream=True
     )
@@ -80,7 +80,7 @@ from seekgpt import SeekGPT
 
 # SeekGPT will fallback to OPENAI_API_KEY if SEEKGPT_API_KEY is not set
 client = SeekGPT(
-    api_base="[https://api.openai.com/v1](https://api.openai.com/v1)",
+    api_base="https://api.openai.com/v1",
     default_model="gpt-4o" # Set a default model for this client instance
 )
 
