@@ -179,19 +179,3 @@ Wrap API calls in `try...except` blocks to handle potential issues.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
-
-**6. `LICENSE`:**
-
-Choose a license (e.g., MIT) and add the corresponding text to the `LICENSE` file.
-
-**7. Build and Upload to PyPI (When Ready):**
-
-1.  Install build tools: `pip install build twine`
-2.  Build the package: `python -m build`
-3.  Check the built distributions in the `dist/` folder.
-4.  Upload to TestPyPI first: `twine upload --repository testpypi dist/*`
-5.  Test installation from TestPyPI: `pip install --index-url https://test.pypi.org/simple/ --no-deps seekgpt`
-6.  Upload to PyPI: `twine upload dist/*`
-
-This structure provides a functional client library that meets your requirements, is ready for packaging, and offers guidance on connecting to various LLM backends. Remember to replace placeholder names and URLs with your actual project details.
