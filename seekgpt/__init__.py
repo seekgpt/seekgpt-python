@@ -6,7 +6,7 @@ A library to interact with SeekGPT and other OpenAI-compatible LLM APIs.
 """
 
 # Define the package version
-__version__ = "0.1.0" # Update this as the package evolves
+__version__ = "0.1.3" # Update this as the package evolves
 
 # Import key components to make them available at the package level
 from .client import (

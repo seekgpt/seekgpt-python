@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 [project]
 # Core metadata about the package, used by PyPI and pip.
 name = "seekgpt"
-version = "0.1.2" # Keep this in sync with seekgpt/__init__.py
+version = "0.1.3" # Keep this in sync with seekgpt/__init__.py
 authors = [
   # Replace with the actual author/maintainer details
   { name="SeekGPT Team / Sanjib Narzary", email="seekgpt.org@gmail.com" },

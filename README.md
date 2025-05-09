@@ -80,7 +80,7 @@ from seekgpt import SeekGPT
 
 # SeekGPT will fallback to OPENAI_API_KEY if SEEKGPT_API_KEY is not set
 client = SeekGPT(
-    api_base="https://api.openai.com/v1](https://api.openai.com/v1)",
+    api_base="https://api.openai.com/v1",
     default_model="gpt-4o" # Set a default model for this client instance
 )
 
