@@ -65,9 +65,9 @@ dependencies = [
 
 # URLs related to the project, displayed on PyPI.
 [project.urls]
-"Homepage" = "https://github.com/seekgpt/seekgpt" # Replace with your actual repo URL
-"Repository" = "https://github.com/seekgpt/seekgpt" # Replace
-"Bug Tracker" = "https://github.com/seekgpt/seekgpt/issues" # Replace
+"Homepage" = "https://github.com/seekgpt/seekgpt-python" # Replace with your actual repo URL
+"Repository" = "https://github.com/seekgpt/seekgpt-python" # Replace
+"Bug Tracker" = "https://github.com/seekgpt/seekgpt-python/issues" # Replace
 # "Documentation" = "https://seekgpt.readthedocs.io/" # If you set up separate docs
 
 # If your package includes command-line scripts:
